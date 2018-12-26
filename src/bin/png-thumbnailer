@@ -1,0 +1,12 @@
+#!/bin/bash
+set -euo pipefail
+IFS=$'\n\t'
+
+if [ -z "$1" ]; then exit 0; fi
+
+INFILE="$1"
+OUTFILE="$2"
+SIZE="$3"
+
+convert "$INFILE" -resize "${SIZE}x${SIZE}" "$OUTFILE"
+

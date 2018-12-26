@@ -1,0 +1,4 @@
+[Thumbnailer Entry]
+TryExec=png-thumbnailer
+Exec=png-thumbnailer %i %o %s
+MimeType=image/png
